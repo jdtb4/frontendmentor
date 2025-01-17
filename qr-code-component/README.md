@@ -23,8 +23,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/jdtb4/frontendmentor/tree/master/qr-code-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Code](https://github.com/jdtb4/frontendmentor/tree/master/qr-code-component)
+- Live Site URL: [Vercel Web](https://qr-code-component-iota-blue.vercel.app/)
 
 ## My process
 
@@ -45,11 +45,9 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Author
 
-- GitHub- [Juan Trujillo](https://github.com/jdtb4)
+- GitHub - [Juan Trujillo](https://github.com/jdtb4)
 - Frontend Mentor - [@jdtb4](https://www.frontendmentor.io/profile/jdtb4)
 
 ## Acknowledgments
 
 For this challenge I used the Chrome Extension "Pixel Perfect Pro" to help me be more accurate with the design.
-
-```
