@@ -20,7 +20,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 ### Links
 
 - Solution URL: [GitHub Code](https://github.com/jdtb4/frontendmentor/tree/master/blog-preview-card)
-- Live Site URL: [Velcerl Web](https://frontendmentor-pvmxeflgn-juan-trujillos-projects.vercel.app/)
+- Live Site URL: [Velcerl Web](https://frontendmentor-rust-ten.vercel.app/)
 
 ## My process
 
