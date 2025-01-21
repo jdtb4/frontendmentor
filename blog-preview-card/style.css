@@ -10,40 +10,36 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 16px;
+  min-height: 100vh;
+  gap: 20px;
   font-family: "Figtree", sans-serif;
   background-color: hsl(47, 88%, 63%);
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  width: 100%;
-  margin: 10% auto;
-}
-
 .card {
-  width: 400px;
+  max-width: 25rem;
   display: flex;
   flex-direction: column;
   padding: 25px;
   border-radius: 20px;
   background-color: hsl(0, 0%, 100%);
   border: 1px solid hsl(0, 0%, 0%);
-  box-shadow: 7px 7px rgb(0, 0, 0);
+  box-shadow: 7px 7px hsl(0, 0%, 0%);
 }
 
 img {
-  width: 348px;
+  display: block;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
 .status {
   text-align: center;
-  width: 90px;
-  padding: 5px;
+  width: fit-content;
+  padding: 10px;
   margin: 15px 0 15px;
   font-weight: 800;
   border-radius: 3px;
@@ -52,12 +48,12 @@ img {
 
 .date {
   margin: 0 0 15px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .tittle {
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 15px;
   transition: all 0.3s ease-in-out;
@@ -85,11 +81,11 @@ img {
   margin-top: 10px;
   gap: 10px;
   font-weight: 800;
-  font-size: 15px;
+  font-size: 0.9rem;
 }
 
 .attribution {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
   color: hsl(0, 0%, 7%);
 }
