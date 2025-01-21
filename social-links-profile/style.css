@@ -2,8 +2,85 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
   font-family: Inter, sans-serif;
+  padding: 1rem;
+  gap: 1.87rem;
+}
+
+.card {
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 12px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 25rem;
+  box-shadow: 0 0 10px hsl(0, 0%, 2%, 0.3);
+}
+
+img {
+  border-radius: 50%;
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
+  width: 30%;
+}
+
+.profile h1 {
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+
+.profile p {
+  margin-top: 0.7rem;
+  color: hsl(75, 94%, 57%);
+}
+
+.description {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 1.5rem 0 1.8rem;
+}
+
+.social-list-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-list-item {
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 5px;
+  padding: 0.75em;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.social-list-item:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 20%);
+}
+
+.attribution {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.75rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(75, 94%, 57%);
 }
