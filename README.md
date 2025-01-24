@@ -32,4 +32,10 @@ This repository contains my solutions to the challenges from [Frontend Mentor](h
             <td align="center"><a href="./social-links-profile/">📝</a></td>
             <td align="center"><a href="https://social-link-profile-neon.vercel.app/">👨‍💻</a></td>
         </tr>
+        <tr>
+            <td>Recipe Page</td>
+            <td>Newbie</td>
+            <td align="center"><a href="./recipe-page-main/">📝</a></td>
+            <td align="center"><a href="https://recipe-page-pi-one.vercel.app/">👨‍💻</a></td>
+        </tr>
 </table>
