@@ -9,6 +9,11 @@ ol li {
   text-indent: 1.25rem;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 :root {
   --White: hsl(0, 0%, 100%);
   --Stone-100: hsl(30, 54%, 90%);
@@ -36,7 +41,7 @@ body {
   font-family: var(--font-out);
   line-height: 1.5;
   gap: 2rem;
-  padding: 4rem;
+  padding-block: 5rem 4rem;
   background-color: var(--Stone-100);
 }
 
@@ -45,13 +50,13 @@ main {
 }
 
 .recipe-image {
-  display: block;
-  width: 100%;
-  border-radius: 12px;
+  padding: 3rem 3rem 0 3rem;
+  img {
+    border-radius: 12px;
+  }
 }
 
 .recipe-card {
-  padding: 3rem;
   border-radius: 16px;
   background-color: var(--White);
 }
@@ -66,16 +71,23 @@ main {
   }
 
   .recipe-image {
-    width: 100vw;
-    margin-inline: -3rem;
-    margin-top: -3rem;
+    padding: 0;
+  }
+
+  .recipe-card {
+    border-radius: 0;
+  }
+
+  .title {
+    line-height: 1;
   }
 }
 
 /* Recipe Header */
 
 .recipe-content {
-  margin-top: 1.5rem;
+  margin-top: 2.2rem;
+  padding-inline: 3rem;
 }
 .title {
   margin-bottom: 0.875rem;
@@ -94,6 +106,7 @@ main {
 
 .preparation {
   padding-block: 1.5rem;
+  margin-inline: 3rem;
   border-radius: 12px;
   font-family: var(--font-out);
   background-color: var(--Rose-50);
@@ -129,6 +142,7 @@ main {
 
 .ingredients {
   margin-block: 2rem;
+  padding-inline: 3rem;
   padding-bottom: 2rem;
   border-bottom: 2px solid var(--Stone-150);
 }
@@ -159,6 +173,7 @@ main {
 
 .instructions {
   margin-block: 2rem;
+  padding-inline: 3rem;
   padding-bottom: 2rem;
   border-bottom: 2px solid var(--Stone-150);
 }
@@ -181,6 +196,10 @@ main {
 
 /* Nutrition */
 
+.nutrition {
+  padding-inline: 3rem;
+  padding-bottom: 2rem;
+}
 .nutrition-info,
 td {
   color: var(--Stone-600);
@@ -201,6 +220,11 @@ td {
   padding-left: 2rem;
   padding-block: 0.5rem;
 }
+
+.nutrition-table-row:last-child {
+  border-bottom: none;
+}
+
 .nutrition-table th {
   color: var(--Brown-800);
 }
