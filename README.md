@@ -38,4 +38,10 @@ This repository contains my solutions to the challenges from [Frontend Mentor](h
             <td align="center"><a href="./recipe-page-main/">📝</a></td>
             <td align="center"><a href="https://recipe-page-pi-one.vercel.app/">👨‍💻</a></td>
         </tr>
+        <tr>
+            <td>Product Preview Card Component</td>
+            <td>Newbie</td>
+            <td align="center"><a href="./product-preview-card-component/">📝</a></td>
+            <td align="center"><a href="https://product-preview-card-4ebhgxnrr-juan-trujillos-projects.vercel.app/">👨‍💻</a></td>
+        </tr>
 </table>
