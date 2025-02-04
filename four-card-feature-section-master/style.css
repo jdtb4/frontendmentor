@@ -1,3 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  gap: 3rem;
+  color: var(--GrayishBlue);
+  font-size: 0.938rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: Poppins, sans-serif;
+  background-color: var(--VeryLightGray);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 70rem;
+}
+
+.card:nth-child(1),
+.card:nth-child(3) {
+  transform: translateY(50%);
+}
+
+.intro {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 200;
+  margin-top: 3rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--VeryDarkBlue);
+}
+
+.description {
+  text-align: center;
+  padding: 0.9rem 19rem;
+  font-weight: 200;
+}
+
+article {
+  display: flex;
+  gap: 30px;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  max-width: 21.7rem;
+  height: 15.7rem;
+  background-color: var(--VeryLightGray);
+  padding: 2rem;
+  border-radius: 7px;
+  box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--VeryDarkBlue);
+}
+
+.card-paragraph {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 200;
+  color: var(--GrayishBlue);
+}
+
+.card img {
+  margin-top: 2rem;
+  float: right;
+}
+
+.card:nth-child(1) {
+  border-top: 5px solid var(--Cyan);
+}
+
+.card:nth-child(2) {
+  border-top: 5px solid var(--Red);
+}
+
+.card:nth-child(3) {
+  border-top: 5px solid var(--Blue);
+}
+
+.card:nth-child(4) {
+  border-top: 5px solid var(--Orange);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
