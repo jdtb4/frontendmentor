@@ -47,6 +47,7 @@ body {
   transform: translateY(50%);
 }
 
+/* Header */
 .intro {
   text-align: center;
   font-size: 2.2rem;
@@ -74,6 +75,7 @@ article {
   justify-content: center;
 }
 
+/* Card */
 .card {
   max-width: 21.7rem;
   height: 15.7rem;
@@ -117,6 +119,33 @@ article {
   border-top: 5px solid var(--Orange);
 }
 
+@media (max-width: 730px) {
+  .container {
+    max-width: 40rem;
+    align-items: center;
+  }
+
+  .intro,
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    padding: 0.9rem 2.8rem;
+  }
+
+  article {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .card:nth-child(1),
+  .card:nth-child(3) {
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
 .attribution {
   font-size: 11px;
   text-align: center;
