@@ -57,4 +57,11 @@ This repository contains my solutions to the challenges from [Frontend Mentor](h
             <td align="center"><a href="./four-card-feature-section-master/">📝</a></td>
             <td align="center"><a href="https://four-card-feature-roan.vercel.app/">👨‍💻</a></td>
         </tr>
+        <tr>
+            <td>7</td>
+            <td>Testimonials Grid Section</td>
+            <td>Junior</td>
+            <td align="center"><a href="./testimonials-grid-section/">📝</a></td>
+            <td align="center"><a href="https://testimonials-grid-section-ashy-kappa.vercel.app/">👨‍💻</a></td>
+        </tr>
 </table>
