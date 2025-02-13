@@ -126,6 +126,14 @@ h2 {
   background-color: var(--white);
 }
 
+.card-3 .title {
+  color: var(--very-dark-grayish-blue);
+}
+
+.card-3 h2 {
+  color: var(--very-dark-grayish-blue);
+}
+
 .card-3 .testimonial {
   margin-bottom: 1rem;
   color: var(--very-dark-grayish-blue);
@@ -157,6 +165,14 @@ h2 {
 /* Card 5 */
 .card-5 {
   background-color: var(--white);
+}
+
+.card-5 h2 {
+  color: var(--very-dark-grayish-blue);
+}
+
+.card-5 .title {
+  color: var(--very-dark-grayish-blue);
 }
 
 .card-5 .testimonial {
