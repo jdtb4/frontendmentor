@@ -71,4 +71,11 @@ This repository contains my solutions to the challenges from [Frontend Mentor](h
             <td align="center"><a href="./profile-card-component/">📝</a></td>
             <td align="center"><a href="https://profile-card-component-coral-sigma.vercel.app/">👨‍💻</a></td>
         </tr>
+        <tr>
+            <td>9</td>
+            <td>Order Summary Component</td>
+            <td>Newbie</td>
+            <td align="center"><a href="./order-summary-component/">📝</a></td>
+            <td align="center"><a href="https://order-summary-component-two-mauve.vercel.app/">👨‍💻</a></td>
+        </tr>
 </table>
