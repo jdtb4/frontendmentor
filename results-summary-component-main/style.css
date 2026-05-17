@@ -18,12 +18,12 @@ img {
   --Light-Slate-Blue: hsl(252, 100%, 67%);
   --Light-Royal-Blue: hsl(241, 81%, 54%);
 
-  --Violet-Blue: hsla(256, 72%, 46%, 1);
-  --Persian-Blue: hsla(241, 72%, 46%, 0);
+  --Violet-Blue: rgb(78, 33, 202);
+  --Persian-Blue: rgba(36, 33, 202, 0);
 
   --White: hsl(0, 0%, 100%);
   --Pale-Blue: hsl(221, 100%, 96%);
-  --Light-Lavander: hsl(241, 100%, 89%);
+  --Light-Lavander: hsl(241, 74%, 78%);
   --Dark-Gray-Blue: hsl(224, 30%, 27%);
 }
 
@@ -33,16 +33,17 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: Hanken Grotesk, sans-serif;
+  gap: 1.5rem;
+  font-family:
+    Hanken Grotesk,
+    sans-serif;
   background-color: var(--Pale-Blue);
   color: var(--Dark-Gray-Blue);
 }
 
 .container {
   display: flex;
-  align-items: center;
-  border-radius: 2rem;
-  box-shadow: 0 1.875rem 3.75rem rgba(61, 108, 236, 0.15);
+  align-items: stretch;
   background-color: var(--White);
 }
 
@@ -50,49 +51,53 @@ body {
 .result {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
   text-align: center;
-  padding: 3rem 4.5rem;
+  align-items: center;
+  padding: 1.5rem 3.5625rem 2.75rem;
   border-radius: 2rem;
-  background: linear-gradient(180deg, #7755ff 0%, #6943ff 0.01%, #2f2ce9 100%);
+  background: linear-gradient(180deg, #532ee7 0%, #6943ff 0.01%, #2f2ce9 100%);
 }
 
 .result-title {
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 3rem;
   color: var(--Light-Lavander);
 }
 
-.total-score {
+.score-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: 5rem;
-  font-weight: 900;
-  padding: 1.5rem 2.625rem;
-  margin-bottom: 3rem;
-  max-width: 8.75rem;
-  color: var(--White);
+  flex-direction: column;
+  padding: 3rem 4rem;
+  border-radius: 100%;
   background: linear-gradient(
     180deg,
     #4d21c9 0%,
     rgba(37, 33, 201, 0) 100%,
     rgba(37, 33, 201, 0) 100%
   );
-  border-radius: 100%;
 }
 
-.total-score span {
+.total-score {
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 129%;
+  color: #ffffff;
+}
+
+.target-score {
   font-size: 1.125rem;
-  font-weight: 500;
+  font-weight: 700;
+  line-height: 1.1875;
   color: var(--Light-Lavander);
 }
 
 .greeting {
-  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  line-height: 1.75;
   color: var(--White);
 }
 
@@ -107,9 +112,14 @@ body {
 .summary {
   display: flex;
   flex-direction: column;
-  padding-block: 3rem 4.5rem;
+  width: 50%;
   padding: 1.5rem 1.875rem 1.875rem;
-  width: 100%;
+}
+
+.summary-results {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
 }
 
 .summary-title {
@@ -120,7 +130,7 @@ body {
 .summary-scores {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  padding: 1rem;
 }
 
 .summary-icon-p {
@@ -128,10 +138,80 @@ body {
   gap: 0.75rem;
 }
 
+.category {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+/* Reaction Component */
+
+.Reaction {
+  background:
+    linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    #ff5555;
+  border-radius: 0.75rem;
+}
+
+.Reaction-p {
+  color: var(--Light-Red);
+  font-weight: 700;
+}
+
+/* Memory Component */
+.Memory {
+  background:
+    linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    #ff9f43;
+  border-radius: 0.75rem;
+}
+
+.Memory-p {
+  color: var(--Orange-yellow);
+  font-weight: 700;
+}
+
+/* Attention Component */
+.Verbal {
+  background:
+    linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    #4cd964;
+  border-radius: 0.75rem;
+}
+
+.Verbal-p {
+  color: var(--Green-teal);
+  font-weight: 700;
+}
+
+/* Flexibility Component */
+.Visual {
+  background:
+    linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    #5856d6;
+  border-radius: 0.75rem;
+}
+
+.Visual-p {
+  color: var(--Cobal-Blue);
+  font-weight: 700;
+}
+
+.score {
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.5;
+  text-align: right;
+  color: var(--Dark-Gray-Blue);
+}
+
+.total {
+  opacity: 0.5;
+}
+
 .continue {
   text-align: center;
   padding: 1.125em 6.875em;
-  margin-top: 2rem;
+  margin-top: 2.725rem;
   font-size: 1.125rem;
   font-weight: 700;
   width: 100%;

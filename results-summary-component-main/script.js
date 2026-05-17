@@ -18,8 +18,8 @@ function addData(data) {
         <img class="icon" src="${item.icon}" alt="" />
         <p class="category ${item.category}-p">${item.category}</p>
       </div>
-      <p>
-        ${item.score}
+      <p class="score"> 
+         ${item.score} 
         <span class="total"> / 100</span>
       </p>
     </div>`;
