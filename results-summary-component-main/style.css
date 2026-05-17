@@ -44,6 +44,7 @@ body {
 .container {
   display: flex;
   align-items: stretch;
+  border-radius: 2rem;
   background-color: var(--White);
 }
 

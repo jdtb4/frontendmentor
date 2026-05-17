@@ -78,4 +78,11 @@ This repository contains my solutions to the challenges from [Frontend Mentor](h
             <td align="center"><a href="./order-summary-component/">📝</a></td>
             <td align="center"><a href="https://order-summary-component-two-mauve.vercel.app/">👨‍💻</a></td>
         </tr>
+        <tr>
+            <td>10</td>
+            <td>Results Summary Component</td>
+            <td>Newbie</td>
+            <td align="center"><a href="./results-summary-component-main/">📝</a></td>
+            <td align="center"><a href="https://results-summary-component-one-gold.vercel.app/">👨‍💻</a></td>
+        </tr>
 </table>
