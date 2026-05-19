@@ -30,6 +30,8 @@ main {
   margin-bottom: 20px;
 }
 
+/* Rating state styles */
+
 .card {
   display: flex;
   flex-direction: column;
@@ -52,15 +54,15 @@ main {
   align-self: flex-start;
 }
 
-h1 {
+.text h1 {
   color: var(--White);
   font-weight: 700;
   font-size: 32px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   margin-bottom: 20px;
 }
 
-.paragraph {
+.text p {
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -119,4 +121,40 @@ h1 {
 }
 .attribution a {
   color: var(--Orange-500);
+}
+
+/* Thank you state styles */
+
+.thank-you-section {
+  display: none;
+}
+.thank-you-illustration {
+  margin-bottom: 30px;
+}
+
+.selected-rating {
+  color: var(--Orange-500);
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  padding: 10px 30px;
+  background-color: hsl(213, 10%, 21%);
+}
+.greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.greeting h1 {
+  color: var(--White);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.greeting p {
+  color: var(--Grey-500);
+  text-align: center;
 }
